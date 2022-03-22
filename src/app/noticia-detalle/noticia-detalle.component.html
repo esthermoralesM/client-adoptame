@@ -1,0 +1,14 @@
+<div class="container">
+    
+        <h1>{{noticia.titulo}}</h1>
+     <div class="boton">
+        <button class="modificar" routerLink="/form-mod-notic">Modificar</button>
+        <button class="eliminar" (click)="eliminar(noticia.idNoticias)">Eliminar</button>
+    </div>
+
+    <div class="principal">
+        <img [src]="noticia.imagen">
+        <p>{{noticia.descripcion}}</p>
+  
+    </div>
+</div>

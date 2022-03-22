@@ -1,0 +1,73 @@
+<div class="container">
+
+    <h1>Lista de animales en adopción</h1>
+ 
+<form>
+    <div class="row">
+        <div class="buscador">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control caracteristicas" id="nombre" placeholder="Nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="sexo">Sexo</label><br>
+            <select name="select" class="caracteristicas">
+                <option disabled selected>Selecciona sexo</option>
+                <option value="Macho">Macho</option>
+                <option value="Hembra">Hembra</option>
+               
+              </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="tipo">Tipo de animal</label><br>
+            <select name="select" class="caracteristicas">
+                <option disabled selected>Selecciona tipo</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Roedor">Roedor</option>
+                <option value="Otros">Otros</option>      
+              </select>
+        </div>
+
+
+        <div class="form-group">
+        <label for="start">En adopción desde:</label><br>
+
+        <input type="date" class="form-control caracteristicas" id="start" name="trip-start" 
+            value="dd-MM-yyyy"
+            min="2021-01-01" max="2022-12-31">
+        </div>
+
+        
+        <div class="form-group">
+            <label for="ciudad">Ciudad</label><br>
+            <select name="select" class="caracteristicas">
+                <option disabled selected>Selecciona ciudad</option>
+                <option value="Terrassa">Terrassa</option>
+                <option value="Barcelona">Barcelona</option>
+               
+              </select>
+        </div>
+            <button class="caracteristicas buscar">Buscar</button>
+        </div>
+        
+    </div>
+    </form>
+
+   
+    <div class="animales">
+        <div class="row">
+            <div class="col-3"  *ngFor="let animal of animales" [routerLink]="['/perfil-animal', animal.idAnimal]">          
+                <div class="card">
+                  
+                    <img [src]="animal.imagen" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{animal.nombre}}</h5>
+                    </div>
+                </div>      
+            </div>
+    </div>  
+</div>

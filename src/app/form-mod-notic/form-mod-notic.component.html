@@ -1,0 +1,79 @@
+<div class="container">
+    <h1>Modificar Noticia</h1>
+ 
+<form class="estrucForm">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" name="titulo" id="titulo"  placeholder="Título" [(ngModel)]="noticia.titulo">
+                </div>
+              </div>
+
+              <div class="col">
+              <div class="form-group">
+                <label>Categoría</label><br>
+                <select name="categoria" [(ngModel)]="noticia.categoria">
+                    <option disabled selected>Selecciona la categoria</option>
+                    <option value="Urgente">Urgente</option>
+                    <option value="Destacado">Destacado</option>
+                    <option value="Importante">Importante</option>
+                    <option value="Lo último">Lo último</option>
+                    <option value="Otros">Otros</option>
+                  </select>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+              <label>Prioridad de la noticia</label><br>
+              <select name="prioridad" [(ngModel)]="noticia.prioridad">
+                  <option disabled selected>Selecciona la prioridad</option>
+                  <option value="Muy importante">Muy importante</option>
+                  <option value="Importante">Importante</option>
+                  <option value="Normal">Normal</option>
+                  <option value="No importante">No importante</option>
+                </select>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+  <div class="form-group">
+    <label for="fecha">Fecha de publicación</label>
+    <input type="date" class="form-control" id="fecha" name="fecha_publicacion"  [(ngModel)]="noticia.fecha_publicacion"
+        value="dd-MM-yyyy"
+        min="2021-01-01" max="2022-12-31">
+    </div>
+    </div>
+
+      <div class="col-8">
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" name="imagen" id="imagen"  placeholder="Imagen"  [(ngModel)]="noticia.imagen">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+        <label for="titular">Titular</label>
+        <textarea class="form-control textarea-titular" name="titular" id="titular" [(ngModel)]="noticia.titular" placeholder="titular">
+        </textarea>
+    </div>
+
+    <div class="row">
+        <div class="col">
+        <label for="descripcion">Descripción</label>
+        <textarea class="form-control textarea-descripcion" name="descripcion" id="descripcion" [(ngModel)]="noticia.descripcion" placeholder="Descripción">
+        </textarea>
+    </div>
+    </div>
+
+    <div class="boton">
+   
+        <button class="btn-update" (click)="updateNoticia()">Modificar</button>
+    </div>
+  </form>
+</div>

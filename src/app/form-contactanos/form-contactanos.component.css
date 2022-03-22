@@ -1,0 +1,47 @@
+input{
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 5px;
+    width: 100%;
+}
+
+textarea{
+     border-radius: 20px;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+.principal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 200px;
+}
+
+.inputs{
+    width: 600px;
+}
+
+img{
+    width: 20%;
+}
+
+.boton{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.boton button{
+   width: 10vw;
+   border-radius: 20px;
+   padding: 5px;  
+   color: white;
+   background-color: #5EC0CA;
+
+}
+
+.boton button:hover{
+    background-color: rgb(7, 3, 66);
+}

@@ -1,0 +1,54 @@
+.buscador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 20px;
+   background-color: #5EC0CA;
+   padding: 20px;
+}
+
+.buscador label{
+    color: white;
+    margin-left: 10px;
+}
+
+.buscador ::placeholder{
+    font-weight: bold;
+}
+
+
+.buscar{
+    align-self: flex-end;
+    color: #5EC0CA;
+}
+
+.caracteristicas{
+    width: 200px; 
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card{
+    width: 17rem; 
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.animales{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.card img{
+    width: 17em; 
+    height: 12em;
+}
+
+.card h5{
+    text-align: center; 
+    font-weight: 1000; 
+    font-size: 1.25em;
+}

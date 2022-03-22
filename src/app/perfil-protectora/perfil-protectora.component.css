@@ -1,0 +1,82 @@
+.tabla img{
+    width: 18vw;
+    margin: 1vw;
+    border-radius: 20px;
+
+}
+
+.tabla{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10vw;
+    background-color: rgb(204, 199, 199);
+    border-radius: 20px;
+    margin-bottom: 2vw;
+}
+
+table{
+    height: 7vw;
+  
+}
+
+table td{
+    padding-left: 2vw;
+    
+}
+
+table th{
+    padding-left: 2vw;
+    text-align: center;
+}
+
+
+
+h1{
+   text-align: center;
+   margin-bottom: 4vw;
+}
+
+
+.descripcion{
+    text-align: justify;
+    margin-bottom: 2vw;
+}
+
+.imagenes img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 3vw;
+}
+
+.botones{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+    margin-bottom: 5vw;
+}
+
+.botones button{
+    width: 10vw;
+    border-radius: 20px;
+    padding: 5px;  
+    color: white;
+}
+
+.anyadir{
+  background-color: orange;
+}
+
+.modificar{
+    background-color: #5EC0CA;
+}
+
+
+.anyadir:hover{
+    background-color: tomato;
+}
+
+.modificar:hover{
+    background-color: rgb(7, 3, 66);
+}

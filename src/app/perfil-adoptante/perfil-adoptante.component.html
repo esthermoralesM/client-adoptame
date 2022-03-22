@@ -1,0 +1,69 @@
+<div class="container">
+  
+  
+
+    <h1>{{adoptante.nombre}} {{adoptante.apellidos}}</h1>
+
+    
+    <div class="tabla">
+      <img [src]="adoptante.imagenPerfil==null ? '../../assets/Logo.png' : adoptante.imagenPerfil">
+    
+      <table>
+         <tr>
+               <th>Nombre</th>
+               <th>Apellidos</th>
+               <th>Teléfono</th>
+               <th>Localidad</th>
+         </tr>
+      
+         <tr>
+               <td>{{adoptante.nombre}}</td>
+               <td>{{adoptante.apellidos}}</td>
+               <td>{{adoptante.telefono}}</td>
+               <td>{{adoptante.localidad}}</td>
+         </tr>
+      </table>
+    </div>
+
+    <div class="botones">
+      <div class="anyadir-img">
+        <input type="text" placeholder="Añadir imagen">
+        <button class="btn btn-primary btn-block">+</button>
+      </div>
+      <button routerLink="/form-adoptante" class="modificar">Modificar</button>
+   </div>
+    
+    <div class="acerca-de-mi">
+        <h3>Acerca de mí:</h3><br>
+       <p>
+          {{adoptante.descripcion}}
+       </p> 
+    </div>
+
+    <div class="imagenes">
+    
+       <div class="row">
+           <div class="col">
+           <img src="../../assets/animalesLandPage/perro1img.jpg">
+        </div>
+        <div class="col">
+           <img src="../../assets/animalesLandPage/perro1img.jpg">
+        </div>
+        <div class="col">
+           <img src="../../assets/animalesLandPage/perro1img.jpg">
+        </div>
+       </div>
+    
+       <div class="row">
+        <div class="col">
+        <img src="../../assets/animalesLandPage/perro1img.jpg">
+     </div>
+     <div class="col">
+        <img src="../../assets/animalesLandPage/perro1img.jpg">
+     </div>
+     <div class="col">
+        <img src="../../assets/animalesLandPage/perro1img.jpg">
+     </div>
+    </div>
+    </div>
+    </div>

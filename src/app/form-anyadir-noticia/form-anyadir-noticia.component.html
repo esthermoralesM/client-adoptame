@@ -1,0 +1,103 @@
+<div class="container">
+    <h1>Añadir Noticia</h1>
+
+<form  #anyadirNoticForm="ngForm" (ngSubmit)="onSubmit(anyadirNoticForm)" class="estrucForm">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" name="titulo" id="titulo"  placeholder="Título" [(ngModel)]="noticia.titulo" #titulo="ngModel"
+                    [ngClass]="{'is-invalid': anyadirNoticForm.submitted && titulo.invalid}" required>
+                    <div class="invalid-feedback" *ngIf="anyadirNoticForm.submitted && titulo.invalid">
+                      <p *ngIf="titulo.errors?.['required']">Introduce un título</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+              <div class="form-group">
+                <label>Categoría</label><br>
+                <select name="categoria" [(ngModel)]="noticia.categoria" #categoria="ngModel"
+                [ngClass]="{'is-invalid': anyadirNoticForm.submitted && categoria.invalid}" required>
+                    <option disabled selected>Selecciona la categoria</option>
+                    <option value="Urgente">Urgente</option>
+                    <option value="Destacado">Destacado</option>
+                    <option value="Importante">Importante</option>
+                    <option value="Lo último">Lo último</option>
+                    <option value="Otros">Otros</option>
+                  </select>
+                  <div class="invalid-feedback" *ngIf="anyadirNoticForm.submitted && categoria.invalid">
+                    <p *ngIf="categoria.errors?.['required']">Introduce una categoria</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+              <label>Prioridad de la noticia</label><br>
+              <select name="prioridad" [(ngModel)]="noticia.prioridad" #prioridad="ngModel"
+              [ngClass]="{'is-invalid': anyadirNoticForm.submitted && prioridad.invalid}" required>
+                  <option disabled selected>Selecciona la prioridad</option>
+                  <option value="Muy importante">Muy importante</option>
+                  <option value="Importante">Importante</option>
+                  <option value="Normal">Normal</option>
+                  <option value="No importante">No importante</option>
+                </select>
+                <div class="invalid-feedback" *ngIf="anyadirNoticForm.submitted && prioridad.invalid">
+                  <p *ngIf="prioridad.errors?.['required']">Introduce una prioridad</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+      <div class="form-group">
+        <label for="fecha">Fecha de publicación</label>
+        <input type="date" class="form-control" id="fecha" name="fecha_publicacion"  [(ngModel)]="noticia.fecha_publicacion" #fecha_publicacion="ngModel"
+            value="dd-MM-yyyy"
+            min="2021-01-01" max="2022-12-31"
+            [ngClass]="{'is-invalid': anyadirNoticForm.submitted && fecha_publicacion.invalid}" required>
+            <div class="invalid-feedback" *ngIf="anyadirNoticForm.submitted && fecha_publicacion.invalid">
+              <p *ngIf="fecha_publicacion.errors?.['required']">Debes introducir una fecha válida</p>
+          </div>
+        </div>
+        </div>
+
+      <div class="col-8">
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" name="imagen" id="imagen"  placeholder="Imagen"  [(ngModel)]="noticia.imagen" #imagen="ngModel"
+            [ngClass]="{'is-invalid': anyadirNoticForm.submitted && imagen.invalid}">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+        <label for="titular">Titular</label>
+        <textarea class="form-control textarea-titular" name="titular" id="titular" [(ngModel)]="noticia.titular" #titular="ngModel" placeholder="titular"
+          [ngClass]="{'is-invalid': anyadirNoticForm.submitted && titular.invalid}" required>
+        </textarea>
+        <div class="invalid-feedback" *ngIf="anyadirNoticForm.submitted && titular.invalid">
+          <p *ngIf="titular.errors?.['required']">El titular es obligatorio</p>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+        <label for="descripcion">Descripción</label>
+        <textarea class="form-control textarea-descripcion" name="descripcion" id="descripcion" [(ngModel)]="noticia.descripcion" #descripcion="ngModel" placeholder="Descripción"
+          [ngClass]="{'is-invalid': anyadirNoticForm.submitted && descripcion.invalid}" required>
+        </textarea>
+        <div class="invalid-feedback" *ngIf="anyadirNoticForm.submitted && descripcion.invalid">
+          <p *ngIf="descripcion.errors?.['required']">La descripción es obligatoria</p>
+          </div>
+    </div>
+    </div>
+
+    <div class="boton"> 
+      <button class="btn-anyadir">Añadir</button>
+    </div>
+</form>
+</div>

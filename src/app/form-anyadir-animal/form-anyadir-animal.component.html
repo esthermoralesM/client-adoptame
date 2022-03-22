@@ -1,0 +1,141 @@
+<div class="container">
+    <h1>Añadir Animal</h1>
+
+<form  #anyadirAnimForm="ngForm" (ngSubmit)="onSubmit(anyadirAnimForm)" class="estrucForm">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" [(ngModel)]="animal.nombre" #nombre="ngModel"
+                    [ngClass]="{'is-invalid': anyadirAnimForm.submitted && nombre.invalid}" required>
+                    <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && nombre.invalid">
+                      <p *ngIf="nombre.errors?.['required']">Introduce un nombre</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-group">
+                    <label for="raza">Raza</label>
+                    <input type="text" name="raza" id="raza" placeholder="Raza" [(ngModel)]="animal.raza" #raza="ngModel"
+                    [ngClass]="{'is-invalid': anyadirAnimForm.submitted && raza.invalid}" required>
+                    <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && raza.invalid">
+                      <p *ngIf="raza.errors?.['required']">Introduce una raza</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+              <div class="form-group">
+                <label>Sexo</label><br>
+                <select name="sexo" [(ngModel)]="animal.sexo" #sexo="ngModel"
+                [ngClass]="{'is-invalid': anyadirAnimForm.submitted && sexo.invalid}" required>
+                    <option disabled selected>Selecciona sexo</option>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                  </select>
+                  <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && sexo.invalid">
+                    <p *ngIf="sexo.errors?.['required']">Debes indicar el sexo del animal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col">
+            <div class="form-group">
+              <label>Tamaño</label><br>
+              <select name="tamanyo" [(ngModel)]="animal.tamanyo" #tamanyo="ngModel"
+              [ngClass]="{'is-invalid': anyadirAnimForm.submitted && tamanyo.invalid}" required>
+                  <option disabled selected>Selecciona tamaño</option>
+                  <option value="pequeño">Pequeño</option>
+                  <option value="mediano">Mediano</option>
+                  <option value="grande">Grande</option>
+                </select>
+                <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && tamanyo.invalid">
+                  <p *ngIf="tamanyo.errors?.['required']">Debes indicar un tamaño</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="form-group">
+          <label>Tipo de Animal</label><br>
+          <select name="tipo_animal" [(ngModel)]="animal.tipo_animal" #tipo_animal="ngModel"
+          [ngClass]="{'is-invalid': anyadirAnimForm.submitted && tipo_animal.invalid}" required>
+              <option disabled selected>Selecciona tipo</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+              <option value="roedor">Roedor</option>
+              <option value="otros">Otros</option>
+            </select>
+            <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && tipo_animal.invalid">
+              <p *ngIf="tipo_animal.errors?.['required']">Debes indicar un tipo</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="col">
+  <div class="form-group">
+    <label for="fecha">Ingreso</label>
+    <input type="date" class="form-control caracteristicas" id="fecha" name="fechaIngreso"  [(ngModel)]="animal.fecha_ingresso" #fechaIngreso="ngModel" 
+        value="dd-MM-yyyy"
+        min="2021-01-01" max="2022-12-31"
+        [ngClass]="{'is-invalid': anyadirAnimForm.submitted && fechaIngreso.invalid}" required>
+        <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && fechaIngreso.invalid">
+          <p *ngIf="fechaIngreso.errors?.['required']">Debes introducir una fecha válida</p>
+      </div>
+    </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+              <label>Estado</label><br>
+              <select name="estado"  [(ngModel)]="animal.estado" #estado="ngModel"
+              [ngClass]="{'is-invalid': anyadirAnimForm.submitted && estado.invalid}" required>
+                  <option disabled selected>Selecciona estado</option>
+                  <option value="adopcion">En adopción</option>
+                  <option value="acogida">En acogida</option>
+                  <option value="adoptado">Adoptado</option>
+                  <option value="otros">Otros</option>
+                </select>
+                <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && estado.invalid">
+                  <p *ngIf="estado.errors?.['required']">Debes indicar el estado del animal</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-8">
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" name="imagen" id="imagen"  placeholder="Imagen" [(ngModel)]="animal.imagen" #imagen="ngModel"
+            [ngClass]="{'is-invalid': anyadirAnimForm.submitted && imagen.invalid}" required>
+            <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && imagen.invalid">
+              <p *ngIf="imagen.errors?.['required']">La imagen es obligatoria</p>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+       
+        <label for="descripcion">Descripción</label>
+        <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" [(ngModel)]="animal.descripcion" #descripcion="ngModel" placeholder="Descripción"
+        [ngClass]="{'is-invalid': anyadirAnimForm.submitted && descripcion.invalid}" required> </textarea>
+        <div class="invalid-feedback" *ngIf="anyadirAnimForm.submitted && descripcion.invalid">
+          <p *ngIf="descripcion.errors?.['required']">La descripción es obligatoria</p>
+          </div>
+    </div>
+    </div>
+
+    <div class="boton">
+    
+    <button class="btn-anyadir">Añadir</button>
+</div>
+</form>
+</div>
+

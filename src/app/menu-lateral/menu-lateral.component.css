@@ -1,0 +1,35 @@
+.menu{
+    width: 220px;
+    position: fixed;
+    height: 640px;
+}
+
+
+.logo img{
+    width: 220px; 
+    height: 5vw; 
+}
+
+img{
+    width: 3em; 
+    height: 3em;
+}
+
+
+.ruta {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 6%;
+}
+
+
+.ruta a{
+    margin-left: 30px;
+    color: black;
+   
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}

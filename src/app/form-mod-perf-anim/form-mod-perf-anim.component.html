@@ -1,0 +1,104 @@
+<div class="container">
+    <h1>Modificar Animal</h1>
+
+<form class="estrucForm">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" [(ngModel)]="animal.nombre">
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-group">
+                    <label for="raza">Raza</label>
+                    <input type="text" name="raza" id="raza" placeholder="Raza" [(ngModel)]="animal.raza">
+                </div>
+              </div>
+
+              <div class="col">
+              <div class="form-group">
+                <label>Sexo</label><br>
+                <select name="sexo" [(ngModel)]="animal.sexo">
+                    <option disabled selected>Selecciona sexo</option>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                  </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col">
+            <div class="form-group">
+              <label>Tamaño</label><br>
+              <select name="tamanyo" [(ngModel)]="animal.tamanyo">
+                  <option disabled selected>Selecciona tamaño</option>
+                  <option value="pequeño">Pequeño</option>
+                  <option value="mediano">Mediano</option>
+                  <option value="grande">Grande</option>
+                </select>
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="form-group">
+          <label>Tipo de Animal</label><br>
+          <select name="tipo_animal" [(ngModel)]="animal.tipo_animal">
+              <option disabled selected>Selecciona tipo</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+              <option value="roedor">Roedor</option>
+              <option value="otros">Otros</option>
+            </select>
+      </div>
+  </div>
+
+  <div class="col">
+  <div class="form-group">
+    <label for="fecha">Ingreso</label>
+    <input type="date" class="form-control caracteristicas" id="fecha" name="fechaIngreso"  [(ngModel)]="animal.fecha_ingresso"
+        value="dd-MM-yyyy"
+        min="2021-01-01" max="2022-12-31">
+    </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+              <label>Estado</label><br>
+              <select name="estado"  [(ngModel)]="animal.estado">
+                  <option disabled selected>Selecciona estado</option>
+                  <option value="adopcion">En adopción</option>
+                  <option value="acogida">En acogida</option>
+                  <option value="adoptado">Adoptado</option>
+                  <option value="otros">Otros</option>
+                </select>
+          </div>
+      </div>
+
+      <div class="col-8">
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" name="imagen" id="imagen"  placeholder="Imagen" [(ngModel)]="animal.imagen">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+       
+        <label for="descripcion">Descripción</label>
+        <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" [(ngModel)]="animal.descripcion" placeholder="Descripción"> 
+        </textarea>
+    </div>
+    </div>
+
+    <div class="boton">
+       <button class="btn-anyadir" (click)="updateAnimal()">Modificar</button>
+    </div>
+</form>
+</div>

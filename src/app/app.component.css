@@ -1,0 +1,21 @@
+.contenedor{
+    background-image: url("../assets/Fondo.jpg");
+    display: flex;
+    flex-direction: row;
+}
+
+.contenidoPagina{
+    width: 100%;
+    overflow-y: auto;
+    margin-left: 200px;
+ 
+}
+
+.footer{
+    background-image: url("../assets/Fondo.jpg");
+}
+
+section{
+    min-height: 82vh;
+    padding: 1em;
+}  

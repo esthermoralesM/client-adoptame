@@ -1,0 +1,132 @@
+.contenedorComoAdoptar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 193, 193);
+    margin-top: 50px;
+    padding: 5px;
+    border-radius: 20px;
+  
+}
+
+.imgCarousel{
+    height: 40vh;
+    border-radius: 20px;
+}
+.infoComoAdoptar{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.instruccion{
+    width: 200px;
+    text-align: center; 
+}
+
+.cards{
+    margin-top: 70px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+.card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+}
+
+.card .card-img-bottom{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.card a{
+    border-radius: 20px;
+    width: 100px;
+    background-color: rgb(98, 156, 231);
+}
+
+.card .card-title{
+font-weight: bold;
+}
+
+.card .protectora{
+    text-decoration: underline;
+}
+
+
+.usuariosYquienesSomos{   
+    text-align: center;
+    margin-top: 90px;
+    background-color: rgb(199, 193, 193);
+    padding: 40px;  
+    border-radius: 20px;
+}
+
+.usuariosYquienesSomos h2{
+    
+    margin: auto;
+    
+
+}
+
+
+
+.colaborador{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    margin:70px auto ;
+}
+
+.info-colaborador p{
+    background-color: rgb(142, 142, 231);
+}
+ .colaborador .texto-colaborador{
+        color: white;
+        background-color: #5EC0CA;
+        width: 45%;
+        border-radius: 0 3em 3em 0;
+        height:  40vh
+ }
+
+.texto-colaborador p{
+    margin-top: 10%; 
+    margin-left: 5%; 
+    text-align: center; 
+    font-size:xx-large;
+    margin-top: 100px;
+}
+
+.redes-colaborador{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+.redes-colaborador img{
+    background-color: #5EC0CA;
+    width: 3em; height: 3em;   
+}
+
+
+
+

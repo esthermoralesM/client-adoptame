@@ -1,0 +1,88 @@
+.tabla img{
+    width: 18vw;
+    margin: 1vw;
+    border-radius: 20px;
+
+}
+
+.tabla{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7vw;
+    background-color: rgb(204, 199, 199);
+    border-radius: 20px;
+    margin-bottom: 2vw;
+}
+
+table{
+    height: 7vw;
+  
+}
+
+table td{
+    padding-left: 2vw;
+   
+}
+
+table th{
+    padding-left: 2vw;
+    text-align: center;
+}
+
+
+
+h1{
+   text-align: center;
+   margin-bottom: 4vw;
+}
+
+.acerca-de-mi{
+    text-align: justify;
+    margin-bottom: 2vw;
+}
+
+.imagenes img{
+    width: 25vw;
+    border-radius: 20px;
+    margin-top: 3vw;
+}
+.botones{
+    margin-bottom: 6vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.anyadir-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.anyadir-img input{
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 5px;
+    width: 250px;
+}
+
+.anyadir-img button{
+    border-radius: 50%;
+    background-color: #5EC0CA;
+}
+
+.anyadir-img button:hover{
+    background-color: rgb(7, 3, 66);
+}
+
+.modificar{
+    width: 10vw;
+    border-radius: 20px;
+    padding: 5px;  
+    color: white;
+    background-color: #5EC0CA;
+}
+
+.modificar:hover{
+    background-color: rgb(7, 3, 66);
+}

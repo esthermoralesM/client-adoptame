@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(199, 193, 193);
+    width: 100%;
+    height: 123px;
+    padding: 10px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconos img{
+    width: 40px;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.copyright {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    color: #8390A2;
+  }
+
+li{
+    color: black;
+}

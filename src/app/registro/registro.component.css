@@ -1,0 +1,44 @@
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.estructura{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+
+.estrucForm input{
+    width: 25vw;
+    margin-bottom: 7px;
+    border-radius: 20px;
+}
+
+#adoptante{
+   gap: 0;
+}
+
+button{
+    border-radius: 20px;
+    margin-top: 7px;
+}
+
+#contenedor-boton{
+    text-align:center;
+}
+
+.radiobuttons{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.radiobuttons label{
+    margin-right: 10px;
+}

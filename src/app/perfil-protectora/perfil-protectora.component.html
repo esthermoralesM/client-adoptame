@@ -1,0 +1,47 @@
+<div class="container">
+  
+    <h1>Protectora Bigotes y peludos</h1>
+
+    <div class="tabla">
+    
+        <img [src]="protectora.imagen==null ? '../../assets/Logo.png' : protectora.imagen">
+        
+        <table>
+            <tr>
+                <th>Localidad</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+            </tr>
+        
+            <tr>
+                <td>{{protectora.localidad}}</td>
+                <td>{{protectora.direccion}}</td>
+                <td>{{protectora.telefono}}</td>
+                <td>{{protectora.email}}</td>
+            </tr>
+        </table>
+    
+    </div>
+
+    <div class="botones">
+       <button class="anyadir"  routerLink="/form-anyadir-animal">Añadir Animal</button>
+       <button class="modificar" routerLink="/form-protectora">Modificar</button>
+    </div>
+    
+    <div class="descripcion">
+        <h3>Sobre nosotros:</h3><br>
+       <p>
+           {{protectora.descripcion}}
+       </p> 
+    </div>
+    
+    <div class="imagenes">
+
+      <div class="row">
+         <div class="col-4"  *ngFor="let animal of animales" [routerLink]="['/perfil-animal', animal.idAnimal]" >          
+                 <img [src]="animal.imagen">
+         </div>
+      </div>
+    </div>
+    </div>

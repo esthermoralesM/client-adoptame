@@ -1,0 +1,66 @@
+.form-group{
+    width: 250px;
+ }
+
+ .row{
+     margin-bottom: 1vw;
+ }
+
+ h1{
+     margin-bottom: 2vw;
+ }
+
+ input{
+     border-radius: 20px;
+     border: 1px solid grey;
+     padding: 5px;
+     width: 250px;
+ }
+
+ select{
+    width: 250px;
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+
+ label{
+     margin-bottom: 2px;
+ }
+
+
+.textarea-descripcion{
+    width: 89%; 
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 2vw;
+ }
+
+ .textarea-titular{
+    border-radius: 20px;
+    margin-bottom: 2vw; 
+    height: 100px;
+    width: 30%; 
+ }
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.btn-anyadir{
+    width: 10vw;
+    border-radius: 20px;
+    padding: 5px;  
+    color: white;
+    background-color: #5EC0CA;
+   
+}
+
+
+.btn-anyadir:hover{
+    background-color: rgb(7, 3, 66);
+}
+
+ 

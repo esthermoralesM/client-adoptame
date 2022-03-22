@@ -1,0 +1,35 @@
+.cards p{
+    font-weight: bold;
+}
+
+.modal-title{
+    font-weight: bold;  
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between
+}
+
+button{
+    width: 10vw;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;  
+    color: white;
+    background-color: #5EC0CA;
+   
+}
+
+
+button:hover{
+    background-color: rgb(7, 3, 66);
+}
+
+.col{
+    margin-bottom: 40px;
+}

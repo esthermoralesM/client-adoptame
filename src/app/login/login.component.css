@@ -1,0 +1,45 @@
+#carouselExampleFade img{
+    border-radius: 50px;
+}
+
+.estructura{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 25vw;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+button{
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#contenedor-boton{
+    text-align:center;
+}
+
+.logo{
+    margin-bottom: 20px;
+}

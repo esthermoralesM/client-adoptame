@@ -1,0 +1,66 @@
+.form-group{
+    width: 250px;
+ }
+
+ .row{
+     margin-bottom: 1vw;
+ }
+
+ h1{
+     margin-bottom: 2vw;
+ }
+
+ input{
+     border-radius: 20px;
+     border: 1px solid grey;
+     padding: 5px;
+     width: 250px;
+ }
+
+ label{
+     margin-bottom: 2px;
+ }
+
+
+ textarea{
+    width: 89%; 
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 2vw;
+ }
+
+
+
+ .botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 20px;
+    margin-bottom: 2vw;
+ }
+
+ .botones button{
+    width: 10vw;
+    border-radius: 20px;
+    padding: 5px;  
+    color: white;
+}
+
+.guardar{
+  background-color: orange;
+}
+
+.eliminar{
+    background-color: #5EC0CA;
+}
+
+.guardar:hover{
+    background-color: tomato;
+}
+
+.eliminar:hover{
+    background-color: rgb(7, 3, 66);
+}
+
+ 

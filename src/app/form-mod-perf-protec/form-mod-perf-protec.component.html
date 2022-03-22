@@ -1,0 +1,57 @@
+<div class="container">
+    <h1>Editar perfil</h1>
+ 
+   <form>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="nombreProtectora">Nombre</label>
+                    <input type="text" name="nombreProtectora" id="nombreProtectora"  placeholder="Nombre" [(ngModel)]="protectora.nombreProtectora">
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion"  placeholder="Direccion" [(ngModel)]="protectora.direccion">
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-group">
+                    <label for="localidad">Localidad</label>
+                    <input type="text" name="localidad" id="localidad"  placeholder="Localidad" [(ngModel)]="protectora.localidad">
+                </div>
+              </div>
+           </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" id="telefono"  placeholder="Teléfono" [(ngModel)]="protectora.telefono">
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="form-group">
+                <label for="imagenPerfil">Imagen de Perfil</label>
+                <input type="text" name="imagenPerfil" id="imagenPerfil"  placeholder="Imagen de Perfin" [(ngModel)]="protectora.imagen">
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+        <label for="descripcion">Descripción</label>
+        <textarea class="form-control" name="descripcion" id="descripcion" [(ngModel)]="protectora.descripcion"
+        ></textarea>
+   
+    </div>
+    </div>
+
+    <div class="botones">
+        <button class="guardar" (click)="updateProtectora()">Guardar</button>
+    </div>
+  </form>
+</div>

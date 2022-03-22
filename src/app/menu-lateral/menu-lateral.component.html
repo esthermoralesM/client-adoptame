@@ -1,0 +1,241 @@
+<div class="container">
+
+  <aside class="menu"  *ngIf="sesionServicio.tipo == undefined" >
+    
+    <div class="logo">
+    <img src="../../assets/Logo.png">
+  </div>
+  <hr>
+        <a routerLink="/inicio">
+            <div class="ruta">
+          <div>
+            <img src="../../assets/menu/Caseta perro.png">
+          </div>
+          <div >
+            <a >Inicio</a>
+          </div>
+        </div>
+       </a>
+
+       <a routerLink="/login">
+        <div class="ruta">
+      <div>
+        <img src="../../assets/menu/Perro con hueso.png">
+      </div>
+      <div >
+        <a >Iniciar Sesión</a>
+      </div>
+    </div>
+   </a>
+
+   <a routerLink="/registro">
+    <div class="ruta">
+  <div>
+    <img src="../../assets/menu/Gato.png">
+  </div>
+  <div >
+    <a >Registrarse</a>
+  </div>
+</div>
+</a>
+
+<a routerLink="/lista-adopciones">
+  <div class="ruta">
+<div>
+  <img src="../../assets/menu/Huella perro.png">
+</div>
+<div >
+  <a >Adopciones</a>
+</div>
+</div>
+</a>
+
+<a routerLink="/noticias">
+  <div class="ruta">
+<div>
+  <img src="../../assets/menu/Conejo.png">
+</div>
+<div >
+  <a >Noticias</a>
+</div>
+</div>
+</a>
+
+<a routerLink="/finales-felices">
+  <div class="ruta">
+<div>
+  <img src="../../assets/menu/Comedero.png">
+</div>
+<div >
+  <a >Finales Felices</a>
+</div>
+</div>
+</a>
+
+  </aside>
+
+
+  <aside class="menu"  *ngIf="sesionServicio.tipo == 'adoptante'" >
+    
+    <div class="logo">
+    <img src="../../assets/Logo.png">
+  </div>
+  <hr>
+
+        <a routerLink="/inicio">
+            <div class="ruta">
+          <div>
+            <img src="../../assets/menu/Caseta perro.png">
+          </div>
+          <div >
+            <a >Inicio</a>
+          </div>
+        </div>
+       </a>
+
+       <a [routerLink]="['/perfil-adoptante', sesionServicio.idUsuario]">
+        <div class="ruta">
+      <div>
+        <img src="../../assets/menu/Perro con hueso.png">
+      </div>
+      <div >
+        <a >Perfil usuario</a>
+      </div>
+    </div>
+   </a>
+
+  
+
+<a routerLink="/lista-adopciones">
+  <div class="ruta">
+<div>
+  <img src="../../assets/menu/Huella perro.png">
+</div>
+<div >
+  <a >Adopciones</a>
+</div>
+</div>
+</a>
+
+<a routerLink="/noticias">
+  <div class="ruta">
+<div>
+  <img src="../../assets/menu/Conejo.png">
+</div>
+<div >
+  <a >Noticias</a>
+</div>
+</div>
+</a>
+
+<a routerLink="/finales-felices">
+  <div class="ruta">
+<div>
+  <img src="../../assets/menu/Comedero.png">
+</div>
+<div >
+  <a >Finales Felices</a>
+</div>
+</div>
+</a>
+
+<hr style="margin-top: 10%;">
+
+<!-- Logout -->
+ <div class="logout">
+  <div class="rutas" style="margin-top: 5%;">
+    <a routerLink=""><div class="ruta">
+      <div class="imagen" >
+        <img src="../../assets/menu/Mano.png" style="width: 3em; height: 3em; margin-right: 20%;">
+      </div>
+      <div class="link">
+        <a routerLink="" style="margin-left: 30%;" (click)="sesionServicio.clearSesion()">Logout</a>
+      </div>
+    </div></a>
+  </div>
+</div>
+</aside>
+
+
+
+<aside class="menu"  *ngIf="sesionServicio.tipo == 'protectora'" >
+    
+  <div class="logo">
+  <img src="../../assets/Logo.png">
+</div>
+<hr>
+
+      <a routerLink="/inicio">
+          <div class="ruta">
+        <div>
+          <img src="../../assets/menu/Caseta perro.png">
+        </div>
+        <div >
+          <a >Inicio</a>
+        </div>
+      </div>
+     </a>
+
+     <a [routerLink]="['/perfil-protectora', sesionServicio.idUsuario]">
+      <div class="ruta">
+    <div>
+      <img src="../../assets/menu/Perro con hueso.png">
+    </div>
+    <div >
+      <a >Perfil Protectora</a>
+    </div>
+  </div>
+ </a>
+
+
+
+<a routerLink="/lista-adopciones">
+<div class="ruta">
+<div>
+<img src="../../assets/menu/Huella perro.png">
+</div>
+<div >
+<a >Adopciones</a>
+</div>
+</div>
+</a>
+
+<a routerLink="/noticias">
+<div class="ruta">
+<div>
+<img src="../../assets/menu/Conejo.png">
+</div>
+<div >
+<a >Noticias</a>
+</div>
+</div>
+</a>
+
+<a routerLink="/finales-felices">
+<div class="ruta">
+<div>
+<img src="../../assets/menu/Comedero.png">
+</div>
+<div >
+<a >Finales Felices</a>
+</div>
+</div>
+</a>
+
+
+<hr style="margin-top: 10%;">
+<!-- Logout -->
+<div class="logout">
+<div class="rutas" style="margin-top: 5%;">
+  <a routerLink=""><div class="ruta">
+    <div class="imagen" >
+      <img src="../../assets/menu/Mano.png" style="width: 3em; height: 3em; margin-right: 20%;">
+    </div>
+    <div class="link">
+      <a routerLink="" style="margin-left: 30%;" (click)="sesionServicio.clearSesion()">Logout</a>
+    </div>
+  </div></a>
+</div>
+</div>
+</aside>
+</div>

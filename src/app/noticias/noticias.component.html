@@ -1,0 +1,22 @@
+
+<div class="container">
+
+  <div class="cabecera">
+<h1>Noticias</h1>
+<button routerLink="/form-anyadir-noticia">Añadir noticia</button>
+</div>
+
+<div class="cards">
+    <div class="row">
+        <div class="col-3"  *ngFor="let noticia of noticias">
+<div class="card" style="width: 18rem;"  [routerLink]="['/noticia-detalle', noticia.idNoticias]">
+    <img class="card-img-top" [src]="noticia.imagen" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">{{noticia.titular}}</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>

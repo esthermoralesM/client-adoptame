@@ -1,0 +1,78 @@
+<div class="container">
+<h1>Perfil</h1>
+<div class="subtitulo">
+<h2>{{animal.nombre}}</h2>
+<h2>{{protectora.nombreProtectora}}<span class="ciudad"> ({{protectora.localidad}})</span> </h2>
+<button>Adopt-Me</button>
+</div>
+
+<div class="tabla">
+
+    <img [src]="animal.imagen">
+
+  
+<table>
+    <tr>
+        <th>Tamaño</th>
+        <th>Raza</th>
+        <th>Sexo</th>
+        <th>Ingreso</th>
+        <th>Dirección</th>
+        <th>Contacto</th>
+
+    </tr>
+
+    <tr>
+        <td>{{animal.tamanyo}}</td>
+        <td>{{animal.raza}}</td>
+        <td>{{animal.sexo}}</td>
+        <td>{{animal.fecha_ingresso}}</td>
+        <td>{{protectora.direccion}}</td>
+        <td>{{protectora.telefono}}</td>
+    </tr>
+</table>
+
+</div>
+
+<div class="botones">
+   <div class="anyadir-img">
+     <input type="text" placeholder="Añadir imagen">
+     <button class="btn btn-primary btn-block">+</button>
+   </div>
+   <button class="modificar" routerLink="/form-mod-animal">Modificar</button>
+</div>
+
+<div class="descripcion">
+   <p>
+      {{animal.descripcion}}
+   </p> 
+</div>
+
+<div class="imagenes">
+
+   <div class="row">
+       <div class="col">
+       <img src="../../assets/animalesLandPage/perro1img.jpg">
+    </div>
+    <div class="col">
+       <img src="../../assets/animalesLandPage/perro1img.jpg">
+    </div>
+    <div class="col">
+       <img src="../../assets/animalesLandPage/perro1img.jpg">
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col">
+    <img src="../../assets/animalesLandPage/perro1img.jpg">
+ </div>
+ <div class="col">
+    <img src="../../assets/animalesLandPage/perro1img.jpg">
+ </div>
+ <div class="col">
+    <img src="../../assets/animalesLandPage/perro1img.jpg">
+ </div>
+</div>
+
+</div>
+</div>

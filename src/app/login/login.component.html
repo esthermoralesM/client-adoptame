@@ -1,0 +1,55 @@
+<div class="container">
+<div class="estructura">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 50%;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/imagenesCarruselLogin/perro1.jpg" class="d-block w-100" alt="" style="height: 60vh;">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenesCarruselLogin/gato.jpg" class="d-block w-100" alt="" style="height: 60vh;">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenesCarruselLogin/perro.jpg" class="d-block w-100" alt="" style="height: 60vh;">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenesCarruselLogin/gato1.jpg" class="d-block w-100" alt="" style="height: 60vh;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+<div class="login">
+<div>
+<h1>Iniciar sesión</h1>
+</div>
+<div>
+<img class="logo" src="../../assets/Logo.png">
+</div>
+<form>
+<div class="form-group">
+<label for="correo">Correo electrónico</label>
+<input type="email" class="form-control" id="correo" placeholder="Introduce correo electrónico" #email>
+</div>
+
+<div class="form-group">
+    <label for="contrasenya">Contraseña</label>
+    <input type="password" class="form-control" id="contrasenya" placeholder="Introduce contraseña" #password>
+    </div>
+
+
+    <div class="boton">
+        <div class="form-group" id="contenedor-boton">
+          <button type="submit" class="btn btn-primary" (click)="login(email.value, password.value)">Iniciar sesión</button>
+        </div>
+    </div>
+  </form>
+  </div>
+  </div>
+</div>
