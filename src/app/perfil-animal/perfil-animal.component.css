@@ -38,13 +38,19 @@ table th{
 
 .subtitulo{
    display: flex;
-   justify-content: space-around;
+   justify-content:flex-start;
    gap:200px;
    margin-top: 40px;
-   margin-bottom: 90px;
+   margin-bottom: 40px;
 }
 
-.subtitulo button{
+.btn-adoptame{
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 40px;
+  
+}
+.btn-adoptame button{
     width: 10vw;
     border-radius: 20px;
     padding: 5px;  
@@ -53,7 +59,8 @@ table th{
 }
 
 
-.subtitulo button:hover{
+
+.btn-adoptame button:hover{
     background-color: tomato;
 }
 

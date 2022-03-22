@@ -27,9 +27,7 @@ export class PerfilAnimalComponent implements OnInit {
     const params=this.activatedRoute.snapshot.params;
    
     if(params['id']){
-     this.servicioAnimal.setId(params['id']);
-
-
+  
      this.servicioAnimal.getAnimal(params['id'])
      .subscribe((data:Animal[])=>{
     

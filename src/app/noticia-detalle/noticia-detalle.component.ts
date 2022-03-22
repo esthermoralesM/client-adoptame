@@ -21,8 +21,6 @@ export class NoticiaDetalleComponent implements OnInit {
     const params=this.activatedRoute.snapshot.params;
     console.log(params);
     if(params['id']){
-      this.servicioNoticias.setId(params['id']);
-
       
      this.servicioNoticias.getNoticia(params['id'])
      .subscribe((data:Noticia[])=>{

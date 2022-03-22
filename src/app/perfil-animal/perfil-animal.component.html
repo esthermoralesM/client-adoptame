@@ -1,9 +1,13 @@
 <div class="container">
 <h1>Perfil</h1>
+
 <div class="subtitulo">
 <h2>{{animal.nombre}}</h2>
 <h2>{{protectora.nombreProtectora}}<span class="ciudad"> ({{protectora.localidad}})</span> </h2>
-<button>Adopt-Me</button>
+</div>
+
+<div class="btn-adoptame">
+<button  *ngIf="this.servicioLogin.tipo == 'adoptante'">Adopt-Me</button>
 </div>
 
 <div class="tabla">
