@@ -36,8 +36,6 @@ h1{
     background-color: rgb(7, 3, 66);
 }
 
-
-
 .eliminar{
     width: 10vw;
     border-radius: 20px;
@@ -49,5 +47,3 @@ h1{
 .eliminar:hover{
     background-color: tomato;
 }
-
-

@@ -3,6 +3,7 @@ import { Animal } from '../models/animal';
 import { AnimalServicioService } from '../shared/animal-servicio.service';
 import {ActivatedRoute, Router } from '@angular/router';
 import { Protectora } from '../models/protectora';
+import { LoginService } from '../shared/login.service';
 
 @Component({
   selector: 'app-perfil-animal',
@@ -16,7 +17,7 @@ export class PerfilAnimalComponent implements OnInit {
   public protectora:Protectora;
   
 
-  constructor(private servicioAnimal: AnimalServicioService, private activatedRoute:ActivatedRoute) {
+  constructor(private servicioAnimal: AnimalServicioService, private activatedRoute:ActivatedRoute, public servicioLogin:LoginService) {
     this.animal=new Animal(null, "", "", "", "", "", "", "", "", null, "");
     this.protectora=new Protectora(null, "", "", "", "", "", "", "", "");
    }

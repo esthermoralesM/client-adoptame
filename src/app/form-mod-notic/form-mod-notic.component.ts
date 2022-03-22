@@ -17,6 +17,13 @@ export class FormModNoticComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.servicioNoticia.getNoticia(this.servicioNoticia.getId())
+    .subscribe((data:Noticia[])=>{
+      this.noticia=data[0];
+    })
+
+
   }
 
 
@@ -43,7 +50,7 @@ this.servicioNoticia.putNoticia(noticia)
 
 if(data=="1"){
   alert("Updated correctly");
-  this.router.navigate(['/noticias']);
+  this.router.navigate(['/noticia-detalle', this.servicioNoticia.getId()]);
 
 }else{
   alert("No updated")

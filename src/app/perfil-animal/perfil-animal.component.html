@@ -39,7 +39,9 @@
      <input type="text" placeholder="Añadir imagen">
      <button class="btn btn-primary btn-block">+</button>
    </div>
-   <button class="modificar" routerLink="/form-mod-animal">Modificar</button>
+ 
+    <button *ngIf="this.servicioLogin.tipo == 'protectora'" class="modificar" routerLink="/form-mod-animal">Modificar</button>
+ 
 </div>
 
 <div class="descripcion">

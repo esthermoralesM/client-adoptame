@@ -17,6 +17,11 @@ export class FormModPerfAnimComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.servicioAnimal.getAnimal(this.servicioAnimal.getId())
+    .subscribe((data:Animal[])=>{
+      this.animal=data[0];
+    })
   }
 
 
