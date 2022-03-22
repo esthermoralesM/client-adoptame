@@ -1,0 +1,21 @@
+.boton{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 7%;
+}
+
+
+.btn-anyadir-final{
+    width: 10vw;
+    border-radius: 20px;
+    padding: 5px;  
+    color: white;
+    background-color: #5EC0CA;
+
+   
+}
+
+
+.btn-anyadir-final:hover{
+    background-color: rgb(7, 3, 66);
+}
